@@ -20,7 +20,7 @@ int main()
 
     // Confere e valida a opção escolhida
 
-    while (opção < 1 || opção > 10)
+    while (opção < 1 || opção > 7)
     {
 
         // Interface de menu
@@ -121,7 +121,7 @@ int main()
 
             printf("FORA BOZO\n");
 
-            for (i4 = 1; i4 <= 100; i4++) {
+            for (i4 = 1; i4 <= 100; i4++) { //Preenche o vetor de 100 elementos com incremento de 10
                 Vetor4[i4] = num4;
                 printf("%d\n", Vetor4[i4]);
                 num4 += 10;
@@ -135,9 +135,9 @@ int main()
 
             printf ("FORA BOZO\n");
             printf("Digite uma palavra\n");
-            scanf("%s", palavra5);
-            letras5 = strlen(palavra5);
-            printf("A palavra possui %d letras\n", letras5);
+            scanf("%s", palavra5); //Recebe a palavra digitada
+            letras5 = strlen(palavra5); //Calcula quantas caracteres tem na palavra inserida
+            printf("A palavra possui %d letras\n", letras5); //Mostra a quantidade de caracteres
         break;
         case 6:
             printf("A opção 6 foi escolhida\n");
@@ -147,9 +147,9 @@ int main()
 
             printf ("FORA BOZO\n");
             printf("Digite uma palavra\n");
-            scanf("%s", palavra6);
-            printf("A palavra inserida escrita ao contrário fica: ");
-            for (t6 = strlen(palavra6) - 1; t6 > -1; t6--) {
+            scanf("%s", palavra6); //Recebe a palavra digitada
+            printf("A palavra inserida escrita ao contrário fica: "); 
+            for (t6 = strlen(palavra6) - 1; t6 > -1; t6--) { //Reescreve a palavra inserida ao contrário
                 printf("%c", palavra6[t6]);
             }
             printf("\n");
@@ -163,15 +163,15 @@ int main()
 
             printf ("FORA BOZO\n");
             printf("Digite uma palavra\n");
-            scanf("%s", palavra7);
+            scanf("%s", palavra7); //Recebe a palavra inserida
             
-            for (i7 = 0; i7 < strlen(palavra7); i7++){
+            for (i7 = 0; i7 < strlen(palavra7); i7++){ //verifica se, dentre as caracteres inseridas, alguma é igual à "a" ou "A"
                 if (palavra7[i7] == 'a' || palavra7[i7] == 'A') {
                     letras7++;
                 }
             }
 
-            printf("A palavra inserida possui %d letras as\n", letras7);
+            printf("A palavra inserida possui %d letras as\n", letras7); //Mostra o número de letras as na palavra inserida
         break;
         }
     }
