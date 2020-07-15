@@ -271,7 +271,7 @@ int main()
 
                         case 1: //Opção que faz operação de adição
                         printf ("A operação escolhida foi adição\n");
-                        printf ("%f + %f = %f\n", valor18, valor28, valor18 + valor18);
+                        printf ("%f + %f = %f\n", valor18, valor28, (valor18 + valor28));
                         printf ("Para retornar ao menu principal, digite 0\n"); //Mostra e lê a opção de voltar ou parar o programa
                         printf ("Para sair do programa, digite 100\n");
                         scanf ("%d", &número8);

@@ -123,7 +123,7 @@ int main ()
                 printf ("Insira o valor de y da segunda coordenada\n");
                 scanf("%f", &yb7);
 
-                d7 = ((xa7 - xb7) * (xa7 - xb7)) + ((ya7 - yb7) * (ya7 - yb7));
+                d7 = sqrt (pow (xa7 - xb7, 2) + pow (ya7 - yb7, 2));
 
                 printf ("A distância entre os dois pontos é: %f (mesma unidade das coordenada inseridas\n", d7);
         break;
@@ -174,8 +174,6 @@ int main ()
                 printf ("Ya = %f\n", ya9);
                 printf ("Xb = %f\n", xb9);
                 printf ("Yb = %f\n", yb9);
-                printf ("Xc = %f\n", xc9);
-                printf ("Yc = %f\n", yc9);
                 printf ("Xc = %f\n", xc9);
                 printf ("Yc = %f\n", yc9);
                 printf ("Xd = %f\n", xd9);
@@ -230,7 +228,7 @@ int main ()
 
                 v12 = d12 * 3.6 / t12;
 
-                printf ("O valor da velocidade em km/h é: %f\n", d12);
+                printf ("O valor da velocidade em km/h é: %f\n", v12);
         break;
 
         case 13:
