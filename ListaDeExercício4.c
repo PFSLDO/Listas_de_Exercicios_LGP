@@ -1,6 +1,7 @@
 /* Lista de Exercícios 4 - Lógica de Programação
 Autora: Pamela Fialho
-Data: 02/06/2020 */
+Criado em: 02/06/2020
+Atualizado em: 03/08/2020*/
 
 // Definindo as bibliotecas
 
@@ -20,7 +21,7 @@ int main()
 
     // Confere e valida a opção escolhida
 
-    while (opção < 1 || opção > 7)
+    while (opção < 1 || opção > 8)
     {
 
         // Interface de menu
@@ -33,6 +34,7 @@ int main()
         printf("Opção 5 - Letras no nome\n");
         printf("Opção 6 - Palavra de trás para frente\n");
         printf("Opção 7 - Letras As\n");
+        printf("Opção 8 - Desafio\n");
 
         // Lendo a opção
 
@@ -172,6 +174,29 @@ int main()
             }
 
             printf("A palavra inserida possui %d letras as\n", letras7); //Mostra o número de letras as na palavra inserida
+        break;
+        case 8:
+            printf("A opção 8 foi escolhida\n");
+
+            int dados[30] = {1603055, 1623284, 1668589, 1713160, 1755779, 1800827, 1839850, 1864681, 1884967, 1926824, 1966748, 2012151, 2046328, 2074860, 2098389, 2118646, 2159654, 2227514, 2287475, 2343366, 2394513, 2419091, 2442375, 2483191, 2552265, 2610102, 2662485, 2707877, 2733677, 2733677}; //Definindo as variáveis
+            int valores8 = 0;
+            int mediamovel = 0;
+            int num8 = 1;
+
+            printf("FORA BOZO\n");
+            printf("Cada média móvel foi calculada a partir de 7 dados dos números de infectados pelo COVID-19 no Brasil entre os dias 05/07/2020 e 02/08/2020\n");
+
+            for(int j8=0; j8<24; j8++) {
+                for(int i8=(0+j8); i8<(7+j8); i8++) {
+                    valores8 = valores8 + dados[i8];
+                }
+
+                mediamovel=valores8/7;
+                printf("A %dª média móvel é: %d\n", (num8+j8), mediamovel);
+                valores8=0;
+            }
+
+            printf("Referência: http://plataforma.saude.gov.br/coronavirus/\n");
         break;
         }
     }
